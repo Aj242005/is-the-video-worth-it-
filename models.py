@@ -1,8 +1,8 @@
 '''this is just basic model definations for the main.py 
 file and created after a cry coz liniter was screaming'''
 
-from pydantic import BaseModel, Field
 from typing import Annotated, Optional, Any, List
+from pydantic import BaseModel, Field
 
 class ResponseModel(BaseModel):
     """Response model containing a message, status, and optional relevant info."""
@@ -23,7 +23,7 @@ class ResponseModel(BaseModel):
         Annotated[
             Any,
             Field(
-                description='''This normal return type''',
+                description='''This normal return imp. stuff when needed''',
                 default = None
             ),
 
