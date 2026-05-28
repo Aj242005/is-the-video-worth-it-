@@ -1,7 +1,7 @@
 '''this is just basic model definations for the main.py 
 file and created after a cry coz liniter was screaming'''
 
-from typing import Annotated, Optional, Any, List
+from typing import Annotated, Optional, Any
 from pydantic import BaseModel, Field
 
 class ResponseModel(BaseModel):
@@ -32,13 +32,6 @@ class ResponseModel(BaseModel):
 class Yturl(BaseModel):
     """Model containing a YouTube video URL."""
     url: Annotated[str, Field(description="This is the url of youtube video.")]
-    context: Annotated[
-        List[Any],
-        Field(
-            default=[],
-            description="This is the chat history of the given thing"
-        ),
-    ]
     chat : Annotated[
         str,
         Field(
