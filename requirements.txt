@@ -9,4 +9,4 @@ youtube_transcript_api
 langchain_classic
 langchain_chroma
 langchain_google_genai
-os
+uuid
