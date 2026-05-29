@@ -1,2 +1,12 @@
 fastapi
 pydantic
+langchain
+langchain_chroma
+dotenv
+yt_dlp
+requests
+youtube_transcript_api
+langchain_classic
+langchain_chroma
+langchain_google_genai
+os
