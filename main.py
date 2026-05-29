@@ -1,9 +1,9 @@
 '''main server file for the project'''
-from fastapi import FastAPI, Response, status
 from dotenv import load_dotenv
+load_dotenv()
+from fastapi import FastAPI, Response, status
 from models import ResponseModel,Yturl
 from controllers import handle_url_and_prompt
-load_dotenv()
 app = FastAPI()
 
 @app.get("/",response_model=ResponseModel)
